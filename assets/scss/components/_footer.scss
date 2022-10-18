@@ -1,0 +1,70 @@
+/*=============== FOOTER ===============*/
+
+.footer {
+    background-color: var(--principal-color-claro);
+    padding-bottom: 2rem;
+
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__logo,
+    &__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-0-75);
+    }
+
+    &__logo {
+        display: inline-block;
+        font-weight: var(--font-semi-bold);
+        font-family: "Ubuntu", sans-serif;
+        color: var(--titulo-color);
+
+        span {
+            color: var(--principal-color);
+        }
+    }
+
+    &__description,
+    &__link {
+        font-size: var(--small-font-size);
+    }
+
+    &__links {
+        display: grid;
+        row-gap: .5rem;
+    }
+
+    &__link {
+        color: var(--titulo-color);
+    }
+
+    &__social {
+        display: flex;
+        column-gap: 1.5rem;
+
+        &-link {
+            font-size: 1.25rem;
+            color: var(--titulo-color);
+        }
+    }
+
+    .face {
+        color: blue;
+    }
+
+    .twi {
+        color: #1DA1F2;
+    }
+
+    .insta {
+        color: #ff0000;
+    }
+
+    &__copy {
+        margin-top: 4rem;
+        text-align: center;
+        font-size: var(--smaller-font-size);
+        color: var(--texto-color);
+    }
+}

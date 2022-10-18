@@ -1,0 +1,27 @@
+/*=============== HOME ===============*/
+.home {
+    &__container {
+        row-gap: 3rem;
+    }
+
+    &__title {
+        color: var(--principal-color);
+        font-size: var(--grande-font-size);
+        font-weight: var(--font-bold);
+    }
+
+    &__description {
+        margin-bottom: var(--mb-2);
+    }
+
+    .span {
+        &__online {
+            color: green;
+        }
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-family: "ubuntu";
+    }
+}

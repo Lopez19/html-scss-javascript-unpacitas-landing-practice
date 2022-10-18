@@ -1,0 +1,57 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+   --header-height: 3rem;
+
+   /*========== Paleta de Colores ==========*/
+   --hue: 36; //  Amarillo: 45   | Rojo: 4 | Naranja: 18  | Verde: 118
+   --sat: 100%; // Amarillo: 98% | Rojo: 90% | Naranja: 85% | Verde: 50%
+   --principal-color: hsl(var(--hue), var(--sat), 50%);
+   --principal-color-claro: hsl(var(--hue), var(--sat), 85%);
+   --principal-color-claro-menos: hsl(var(--hue), var(--sat), 80%);
+   --principal-color-alt: hsl(var(--hue), var(--sat), 53%);
+   --titulo-color: hsl(var(--hue), 4%, 15%);
+   --texto-color: hsl(var(--hue), 4%, 35%);
+   --texto-color-claro: hsl(var(--hue), 4%, 65%);
+   --body-color: hsl(var(--hue), 0%, 100%);
+   --container-color: #ffffff;
+   --scroll-bar-color: hsl(var(--hue), 4%, 85%);
+   --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+
+   /*========== Fuentes y tipografías ==========*/
+   --body-fuente: "Poppins", sans-serif;
+
+   --grande-font-size: 2.5rem;
+   --h2-font-size: 1.25rem;
+   --h3-font-size: 1.125rem;
+   --normal-font-size: 0.938rem;
+   --small-font-size: 0.813rem;
+   --smaller-font-size: 0.75rem;
+
+   // Responsive tipografías
+   @media screen and (min-width: 968px) {
+      --grande-font-size: 3rem;
+      --h2-font-size: 1.75rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.813rem;
+   }
+
+   /*========== Fuentes Negrita ==========*/
+   --font-semi-bold: 600;
+   --font-bold: 700;
+
+   /*========== Margenes ==========*/
+   --mb-0-5: 0.5rem;
+   --mb-0-75: 0.75rem;
+   --mb-1: 1rem;
+   --mb-1-5: 1.5rem;
+   --mb-2: 2rem;
+
+   /*========== z-index ==========*/
+   --z-tooltip: 10;
+   --z-fixed: 100;
+}

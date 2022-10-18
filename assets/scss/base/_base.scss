@@ -1,0 +1,49 @@
+/*=============== BASE ===============*/
+
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   margin: var(--header-height) 0 0 0;
+   font-family: var(--body-fuente);
+   font-size: var(--normal-font-size);
+   background-color: var(--body-color);
+   color: var(--texto-color);
+
+   // Animación
+   transition: .5s;
+   -webkit-transition: .5s;
+   -moz-transition: .5s;
+   -ms-transition: .5s;
+   -o-transition: .5s;
+}
+
+h1,
+h2,
+h3 {
+   font-weight: var(--font-semi-bold);
+   color: var(--titulo-color);
+   line-height: 1.5;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}

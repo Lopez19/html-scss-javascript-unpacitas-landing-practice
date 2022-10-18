@@ -1,0 +1,155 @@
+/*=============== MEDIA QUERIES ===============*/
+
+/* Para dispositivos pequeños */
+@media screen and (max-width: 360px) {
+    .img__normal {
+        width: 100%;
+    }
+
+    .section {
+        padding: 3.5rem 0 1rem;
+    }
+
+    .equipo__img,
+    .ventajas__img {
+        width: 100px;
+    }
+}
+
+/* Para dispositivos medianos */
+@media screen and (min-width: 576px) {
+    .img__normal {
+        width: 100%;
+    }
+
+    .section__title-center {
+        text-align: initial;
+    }
+
+    .home__container,
+    .about__container,
+    .equipo__container,
+    .ventajas__container,
+    .contact__container,
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home__img {
+        order: 1;
+    }
+
+    .home__container,
+    .about__container,
+    .contact__container {
+        align-items: center;
+    }
+
+    .about__contenido,
+    .contact__description {
+        text-align: initial;
+    }
+
+    .about__img {
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 6rem 0 2rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+
+        &__list {
+            flex-direction: row;
+            column-gap: 2.5rem;
+        }
+
+        &__toggle {
+            display: none;
+        }
+    }
+
+    .cambiar-tema {
+        position: initial;
+    }
+
+    .home__container {
+        padding: 6rem 0 2rem;
+    }
+
+}
+
+/* Para dispositivos largos */
+@media screen and (min-width: 968px) {
+    .button__header {
+        display: block;
+    }
+
+    .img__normal {
+        width: 470px;
+    }
+
+    .about__container,
+    .contact__container {
+        column-gap: 6rem;
+    }
+
+    .equipo__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ventajas__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact__container {
+        grid-template-columns: 3fr 1.5fr 1.25fr;
+    }
+
+    .footer {
+        &__container {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        &__social {
+            align-items: flex-start;
+
+            &-link {
+                font-size: 1.45rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home {
+        &__img {
+            width: 540px;
+        }
+
+        &__description {
+            padding-right: 5rem;
+        }
+    }
+
+    .footer__container {
+        column-gap: 3rem;
+    }
+
+    .scrollup {
+        right: 2rem;
+    }
+}

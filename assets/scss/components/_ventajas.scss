@@ -1,0 +1,28 @@
+/*=============== VENTAJAS ===============*/
+
+.ventajas {
+    &__container {
+        padding-top: 1rem;
+    }
+
+    &__contenido {
+        display: grid;
+        row-gap: 1rem;
+        background-color: var(--container-color);
+        box-shadow: 0px 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    &__img {
+        width: 135px;
+        border-radius: 100%;
+        justify-self: center;
+        margin-bottom: var(--mb-0-5);
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+}
