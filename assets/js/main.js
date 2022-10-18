@@ -66,3 +66,37 @@ function scrollUp() {
 window.addEventListener("scroll", scrollUp);
 
 /*=============== MODO OSCURO ===============*/
+const themeButton = document.getElementById("tema-button");
+const darkTheme = "dark-theme";
+const iconTheme = "fa-toggle-on";
+
+// Tema seleccionado previamente (si el usuario lo ha seleccionado)
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+// Obtenemos el tema actual que tiene la interfaz validando la clase dark-theme
+const getCurrentTheme = () =>
+   document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+   themeButton.classList.contains(iconTheme) ? "fa-toggle-off" : "fa-toggle-on";
+
+// Validamos si el usuario eligió previamente un tema
+if (selectedTheme) {
+   // Si se cumple la validación, preguntamos cuál era el problema para saber si activamos o desactivamos la oscuridad
+   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+      darkTheme
+   );
+   themeButton.classList[selectedIcon === "fa-toggle-off" ? "add" : "remove"](
+      iconTheme
+   );
+}
+
+// Activar / desactivar el tema manualmente con el botón
+themeButton.addEventListener("click", () => {
+   // Añadir o quitar el tema oscuro / icono
+   document.body.classList.toggle(darkTheme);
+   themeButton.classList.toggle(iconTheme);
+   // Guardamos el tema y el icono actual que el usuario eligió
+   localStorage.setItem("selected-theme", getCurrentTheme());
+   localStorage.setItem("selected-icon", getCurrentIcon());
+});

@@ -99,8 +99,31 @@ img {
 }
 
 /*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
-/*========== Button Dark/Light ==========*/
+/*========== Variables Tema Oscuro ==========*/
+body.dark-theme {
+  --principal-color-claro: hsl(var(--hue), var(--sat), 75%);
+  --titulo-color: hsl(var(--hue), 4%, 95%);
+  --texto-color: hsl(var(--hue), 4%, 80%);
+  --body-color: hsl(var(--hue), 8%, 13%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+  --scroll-bar-color: hsl(var(--hue), 4%, 32%);
+  --scroll-thumb-color: hsl(var(--hue), 4%, 24%);
+}
+
+/*========== Button Oscuro/Claro ==========*/
+.cambiar-tema {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.dark-theme .footer {
+  background-color: var(--container-color);
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 1rem;
