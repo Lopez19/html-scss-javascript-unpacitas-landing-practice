@@ -52,6 +52,16 @@
         font-weight: var(--font-semi-bold);
     }
 
+    // __link :hover
+    &__link:hover {
+        color: var(--principal-color);
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+    }
+
     // __logo span
     &__logo {
         font-size: 2rem;

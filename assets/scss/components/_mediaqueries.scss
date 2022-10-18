@@ -2,29 +2,28 @@
 
 /* Para dispositivos pequeños */
 @media screen and (max-width: 360px) {
-    .img__normal {
-        width: 100%;
-    }
 
     .section {
         padding: 3.5rem 0 1rem;
     }
 
-    .equipo__img,
-    .ventajas__img {
-        width: 100px;
-    }
-}
-
-/* Para dispositivos medianos */
-@media screen and (min-width: 576px) {
     .img__normal {
         width: 100%;
     }
 
-    .section__title-center {
-        text-align: initial;
+    .img__redonda {
+        width: 100%;
     }
+
+    .equipo__img,
+    .ventajas__img {
+        width: 125px;
+    }
+
+}
+
+/* Para dispositivos medianos */
+@media screen and (min-width: 576px) {
 
     .home__container,
     .about__container,
@@ -35,8 +34,28 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .section__title-center {
+        text-align: initial;
+    }
+
+    .img {
+
+        &__normal {
+            width: 100%;
+        }
+
+        &__redonda {
+            width: 100%;
+        }
+
+    }
+
     .home__img {
         order: 1;
+    }
+
+    .about__img {
+        order: -1;
     }
 
     .home__container,
@@ -50,18 +69,13 @@
         text-align: initial;
     }
 
-    .about__img {
-        order: -1;
-    }
+    // #ff9900
+
 }
 
 @media screen and (min-width: 767px) {
     body {
         margin: 0;
-    }
-
-    .section {
-        padding: 6rem 0 2rem;
     }
 
     .nav {
@@ -70,12 +84,18 @@
         &__list {
             flex-direction: row;
             column-gap: 2.5rem;
+            font-size: var(--small-font-size);
         }
 
         &__toggle {
             display: none;
         }
     }
+
+    .section {
+        padding: 6rem 0 2rem;
+    }
+
 
     .cambiar-tema {
         position: initial;
@@ -91,6 +111,13 @@
 @media screen and (min-width: 968px) {
     .button__header {
         display: block;
+    }
+
+    .nav {
+        &__list {
+            column-gap: 3rem;
+            font-size: var(--normal-font-size);
+        }
     }
 
     .img__normal {

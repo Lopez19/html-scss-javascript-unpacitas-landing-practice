@@ -28,6 +28,12 @@
 }
 
 .img {
+
+    &__sin-borde {
+        width: 300px;
+        justify-self: center;
+    }
+
     &__normal {
         width: 300px;
         justify-self: center;
