@@ -638,14 +638,14 @@ body.dark-theme {
             column-gap: 6rem;
   }
 
-  .equipo__container {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .ventajas__container {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .equipo__container {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact__container {
@@ -654,8 +654,8 @@ body.dark-theme {
   }
 
   .footer__container {
-    -ms-grid-columns: (1fr)[5];
-    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
   }
   .footer__social {
     -webkit-box-align: start;
@@ -663,7 +663,7 @@ body.dark-theme {
             align-items: flex-start;
   }
   .footer__social-link {
-    font-size: 1.45rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1024px) {

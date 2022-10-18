@@ -102,12 +102,12 @@
         column-gap: 6rem;
     }
 
-    .equipo__container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .ventajas__container {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .equipo__container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contact__container {
@@ -116,14 +116,14 @@
 
     .footer {
         &__container {
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
 
         &__social {
             align-items: flex-start;
 
             &-link {
-                font-size: 1.45rem;
+                font-size: 1.7rem;
             }
         }
     }
