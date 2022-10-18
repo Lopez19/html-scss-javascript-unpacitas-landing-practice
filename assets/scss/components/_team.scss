@@ -12,11 +12,20 @@
         padding: 2rem 1.5rem;
         border-radius: 1rem;
         text-align: center;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
     }
 
     &__img {
         width: 135px;
+        border-radius: 100%;
         justify-self: center;
         margin-bottom: var(--mb-0-5);
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
     }
 }
